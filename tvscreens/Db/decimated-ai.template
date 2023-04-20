@@ -1,0 +1,5 @@
+record (ai, "$(PV)-dec") {
+    field(SCAN, "45 second")
+    field(INP, "$(PV)")
+    field(EGU, "$(EGU)")
+}

@@ -1,0 +1,13 @@
+file "tvscreens-ctrl.template" { pattern {} {}
+}
+
+file "decimated-ai.template" { pattern
+{PV  			       EGU}
+{Cryo-Dwr:LHe:LI5200-PercOut   "%"}
+{Cryo-CBox:LN2:LI3685-PercOut  "%"}
+{CstatV-LHe:TT665M:sRdV	       "K"}
+{CstatV-LHe:TT663M:sRdV	       "K"}
+{MAG-RCH1:I_MEAS	       "A"}
+{MAG-RCH2:I_MEAS	       "A"}
+}
+

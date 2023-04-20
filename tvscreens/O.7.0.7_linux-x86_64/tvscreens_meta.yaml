@@ -1,0 +1,5 @@
+wrapper_url: 'https://github.com/freia-lab/e3-tvscreens.git'
+wrapper_git_desc: 'ba750d60f630190b65fdcb6501f891449711e1d1'
+wrapper_diffs: [ " M cmds/st.cmd",  " M configure/CONFIG_MODULE",  " M configure/module/RULES_MODULE",  " M tvscreens.Makefile",  "?? opi/Embedded/",  "?? opi/tvScreens-ctrl.bob",  "?? tvscreens/", ]
+module_git_desc: 'ba750d60f630190b65fdcb6501f891449711e1d1'
+module_diffs: [ " M cmds/st.cmd",  " M configure/CONFIG_MODULE",  " M configure/module/RULES_MODULE",  "?? opi/Embedded/",  "?? opi/tvScreens-ctrl.bob",  "?? tvscreens/", ]

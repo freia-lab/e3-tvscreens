@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>tvScreens-ctrl</name>
+  <macros>
+    <P>FREIA-Info:</P>
+    <R></R>
+  </macros>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <class>TITLE</class>
+    <text>TV Screens Control</text>
+    <x use_class="true">20</x>
+    <y use_class="true">0</y>
+    <width>550</width>
+    <height use_class="true">50</height>
+    <font use_class="true">
+      <font name="Header 1" family="Source Sans Pro" style="BOLD_ITALIC" size="36.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="HEADER-TEXT" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <transparent use_class="true">true</transparent>
+    <horizontal_alignment use_class="true">0</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <wrap_words use_class="true">false</wrap_words>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_1</name>
+    <text>Screen loop update coubnter:</text>
+    <x>10</x>
+    <y>50</y>
+    <width>210</width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(P)$(R)scrnSeqProc</pv_name>
+    <x>240</x>
+    <y>50</y>
+    <width>40</width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_2</name>
+    <text>Loop period:</text>
+    <x>10</x>
+    <y>80</y>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_2</name>
+    <pv_name>$(P)$(R)scrnUpdPeriod</pv_name>
+    <x>130</x>
+    <y>80</y>
+    <width>50</width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_3</name>
+    <text>Selected screen:</text>
+    <x>10</x>
+    <y>110</y>
+    <width>120</width>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_3</name>
+    <pv_name>$(P)$(R)scrnSelect</pv_name>
+    <x>130</x>
+    <y>110</y>
+    <width>50</width>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>  Loop Set-up</name>
+    <y>140</y>
+    <width>270</width>
+    <height>290</height>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label_4</name>
+      <text>Active screens</text>
+      <x>10</x>
+      <y>15</y>
+      <width>119</width>
+      <font>
+        <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+        </font>
+      </font>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_5</name>
+      <text>Delay [s]</text>
+      <x>140</x>
+      <y>15</y>
+      <font>
+        <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+        </font>
+      </font>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display</name>
+      <macros>
+        <N>0</N>
+      </macros>
+      <file>Embedded/scrCtrl.bob</file>
+      <y>39</y>
+      <width>230</width>
+      <height>30</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_1</name>
+      <macros>
+        <N>1</N>
+      </macros>
+      <file>Embedded/scrCtrl.bob</file>
+      <y>69</y>
+      <width>230</width>
+      <height>30</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_2</name>
+      <macros>
+        <N>2</N>
+      </macros>
+      <file>Embedded/scrCtrl.bob</file>
+      <y>99</y>
+      <width>230</width>
+      <height>30</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_3</name>
+      <macros>
+        <N>3</N>
+      </macros>
+      <file>Embedded/scrCtrl.bob</file>
+      <y>129</y>
+      <width>230</width>
+      <height>30</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_4</name>
+      <macros>
+        <N>4</N>
+      </macros>
+      <file>Embedded/scrCtrl.bob</file>
+      <y>159</y>
+      <width>230</width>
+      <height>30</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_5</name>
+      <macros>
+        <N>5</N>
+      </macros>
+      <file>Embedded/scrCtrl.bob</file>
+      <y>189</y>
+      <width>230</width>
+      <height>30</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_6</name>
+      <macros>
+        <N>6</N>
+      </macros>
+      <file>Embedded/scrCtrl.bob</file>
+      <y>219</y>
+      <width>230</width>
+      <height>30</height>
+    </widget>
+  </widget>
+  <widget type="webbrowser" version="2.0.0">
+    <name>Web Browser</name>
+    <url>http://freia.physics.uu.se/dbwr/view.jsp?display=http://freia.physics.uu.se/CSS/dbwrDir/tvScreens/test.bob</url>
+    <x>360</x>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_7</name>
+    <macros>
+      <PV>Cryo-Dwr:LHe:LI5200-PercOut</PV>
+    </macros>
+    <file>Embedded/decimation.bob</file>
+    <x>10</x>
+    <y>440</y>
+    <width>340</width>
+    <height>40</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_8</name>
+    <macros>
+      <PV>Cryo-CBox:LN2:LI3685-PercOut</PV>
+    </macros>
+    <file>Embedded/decimation.bob</file>
+    <x>10</x>
+    <y>470</y>
+    <width>340</width>
+    <height>40</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_9</name>
+    <macros>
+      <PV>CstatV-LHe:TT665M:sRdV</PV>
+    </macros>
+    <file>Embedded/decimation.bob</file>
+    <x>10</x>
+    <y>500</y>
+    <width>340</width>
+    <height>40</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_10</name>
+    <macros>
+      <PV>CstatV-LHe:TT663M:sRdV</PV>
+    </macros>
+    <file>Embedded/decimation.bob</file>
+    <x>10</x>
+    <y>530</y>
+    <width>340</width>
+    <height>40</height>
+  </widget>
+</display>

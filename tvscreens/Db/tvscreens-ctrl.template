@@ -1,0 +1,64 @@
+record (seq,"$(P)$(R)scrnCtrl") {
+    field(DESC, "Select visibility")
+    field(SCAN, "Passive")
+    field(SELM, "Mask")
+    field(SHFT, "0")
+    field(DOL0, "0")
+    field(DOL1, "1")
+    field(DOL2, "2")
+    field(DOL3, "3")
+    field(DOL4, "4")
+    field(DOL5, "5")
+    field(DOL6, "6")
+    field(DOL7, "7")
+    field(DOL8, "8")
+    field(DOL9, "9")
+    field(DOLA, "10")
+    field(DOLB, "11")
+    field(DOLC, "12")
+    field(DOLD, "13")
+    field(DOLE, "14")
+    field(DOLF, "15")
+    field(LNK0, "$(P)$(R)scrnSelect PP")
+    field(LNK1, "$(P)$(R)scrnSelect PP")
+    field(LNK2, "$(P)$(R)scrnSelect PP")
+    field(LNK3, "$(P)$(R)scrnSelect PP")
+    field(LNK4, "$(P)$(R)scrnSelect PP")
+    field(LNK5, "$(P)$(R)scrnSelect PP")
+    field(LNK6, "$(P)$(R)scrnSelect PP")
+    field(LNK7, "$(P)$(R)scrnSelect PP")
+    field(LNK8, "$(P)$(R)scrnSelect PP")
+    field(LNK9, "$(P)$(R)scrnSelect PP")
+    field(LNKA, "$(P)$(R)scrnSelect PP")
+    field(LNKB, "$(P)$(R)scrnSelect PP")
+    field(LNKC, "$(P)$(R)scrnSelect PP")
+    field(LNKD, "$(P)$(R)scrnSelect PP")
+    field(LNKE, "$(P)$(R)scrnSelect PP")
+    field(LNKF, "$(P)$(R)scrnSelect PP")
+    field(SELL, "$(P)$(R)scrnMask")
+}
+
+record (longout, "$(P)$(R)scrnSelect") {
+    field(DESC, "Visible screen number")
+}
+
+record (mbboDirect, "$(P)$(R)scrnMask") {
+    field(DESC, "Visible screens mask")
+}
+
+record (calcout, "$(P)$(R)scrnSeqProc") {
+    field(SCAN, "1 second")
+    field(INPA, "$(P)$(R)scrnSeqProc")
+    field(INPB, "$(P)$(R)scrnUpdPeriod")
+    field(OOPT, "Transition To Zero")
+    field(CALC, "A=0?A+1:(A<B-1?A+1:0)")
+    field(DOPT, "Use CALC")
+    field(OUT, "$(P)$(R)scrnCtrl.PROC")
+}
+
+record (longout, "$(P)$(R)scrnUpdPeriod") {
+    field(DESC, "Screen loop update period")
+    field(EGU, "s")
+    field(VAL, "10")
+    field(PINI, "YES")
+}

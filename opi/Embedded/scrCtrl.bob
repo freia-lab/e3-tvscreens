@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>mask and delay</name>
+  <width>250</width>
+  <height>30</height>
+  <widget type="checkbox" version="2.0.0">
+    <name>Check Box</name>
+    <pv_name>$(P)$(R)scrnMask.B$(N)</pv_name>
+    <bit>-1</bit>
+    <label>Screen $(N)</label>
+    <width>110</width>
+    <height>30</height>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_4</name>
+    <pv_name>$(P)$(R)scrnCtrl.DLY$(N)</pv_name>
+    <x>150</x>
+    <y>5</y>
+    <width>50</width>
+    <precision>0</precision>
+    <show_units>false</show_units>
+  </widget>
+</display>
