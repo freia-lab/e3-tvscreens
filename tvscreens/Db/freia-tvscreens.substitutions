@@ -9,5 +9,15 @@ file "decimated-ai.template" { pattern
 {CstatV-LHe:TT663M:sRdV	       "K"}
 {MAG-RCH1:I_MEAS	       "A"}
 {MAG-RCH2:I_MEAS	       "A"}
+{CM-Vac:PT10:PrsR	       "mbar"}
+{CM-Vac:PT20:PrsR	       "mbar"}
+{HPRF-Cav1:FwdPwr:sRdV	       "kW"}
+{HPRF-Cav2:FwdPwr:sRdV	       "kW"}
+{LLRF:SigGen:PlsWdth	       "µs"}
+{CM-CM:LT:sRdV		       "cm"}
+{CM-VBox:LT03:sRdV	       "cm"}
+{CM-CM:TT04:sRdV	       "K"}
+{CM-CM:TT05:sRdV	       "K"}
+{CM-CM:TT06:sRdV	       "K"}
+{CM-CM:TT07:sRdV	       "K"}
 }
-

@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2023-04-26 13:40:15 by konrad-->
 <display version="2.0.0">
   <name>tvScreens-ctrl</name>
   <macros>
@@ -165,53 +166,110 @@
       <height>30</height>
     </widget>
   </widget>
-  <widget type="webbrowser" version="2.0.0">
-    <name>Web Browser</name>
-    <url>http://freia.physics.uu.se/dbwr/view.jsp?display=http://freia.physics.uu.se/CSS/dbwrDir/tvScreens/test.bob</url>
-    <x>360</x>
-  </widget>
-  <widget type="embedded" version="2.0.0">
-    <name>Embedded Display_7</name>
-    <macros>
-      <PV>Cryo-Dwr:LHe:LI5200-PercOut</PV>
-    </macros>
-    <file>Embedded/decimation.bob</file>
-    <x>10</x>
-    <y>440</y>
+  <widget type="group" version="2.0.0">
+    <name>Group</name>
+    <x>410</x>
+    <y>180</y>
     <width>340</width>
-    <height>40</height>
+    <height>160</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_11</name>
+      <macros>
+        <PV>CM-Vac:PT10:PrsR</PV>
+      </macros>
+      <file>Embedded/decimation.bob</file>
+      <width>340</width>
+      <height>40</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_12</name>
+      <macros>
+        <PV>CM-Vac:PT20:PrsR</PV>
+      </macros>
+      <file>Embedded/decimation.bob</file>
+      <y>30</y>
+      <width>340</width>
+      <height>40</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_13</name>
+      <macros>
+        <PV>HPRF-Cav1:FwdPwr:sRdV</PV>
+      </macros>
+      <file>Embedded/decimation.bob</file>
+      <y>60</y>
+      <width>340</width>
+      <height>40</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_14</name>
+      <macros>
+        <PV>HPRF-Cav2:FwdPwr:sRdV</PV>
+      </macros>
+      <file>Embedded/decimation.bob</file>
+      <y>90</y>
+      <width>340</width>
+      <height>40</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_15</name>
+      <macros>
+        <PV>LLRF:SigGen:PlsWdth</PV>
+      </macros>
+      <file>Embedded/decimation.bob</file>
+      <y>120</y>
+      <width>340</width>
+      <height>40</height>
+    </widget>
   </widget>
-  <widget type="embedded" version="2.0.0">
-    <name>Embedded Display_8</name>
-    <macros>
-      <PV>Cryo-CBox:LN2:LI3685-PercOut</PV>
-    </macros>
-    <file>Embedded/decimation.bob</file>
-    <x>10</x>
-    <y>470</y>
+  <widget type="group" version="2.0.0">
+    <name>Group</name>
+    <x>410</x>
+    <y>50</y>
     <width>340</width>
-    <height>40</height>
-  </widget>
-  <widget type="embedded" version="2.0.0">
-    <name>Embedded Display_9</name>
-    <macros>
-      <PV>CstatV-LHe:TT665M:sRdV</PV>
-    </macros>
-    <file>Embedded/decimation.bob</file>
-    <x>10</x>
-    <y>500</y>
-    <width>340</width>
-    <height>40</height>
-  </widget>
-  <widget type="embedded" version="2.0.0">
-    <name>Embedded Display_10</name>
-    <macros>
-      <PV>CstatV-LHe:TT663M:sRdV</PV>
-    </macros>
-    <file>Embedded/decimation.bob</file>
-    <x>10</x>
-    <y>530</y>
-    <width>340</width>
-    <height>40</height>
+    <height>130</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_7</name>
+      <macros>
+        <PV>Cryo-Dwr:LHe:LI5200-PercOut</PV>
+      </macros>
+      <file>Embedded/decimation.bob</file>
+      <width>340</width>
+      <height>40</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_8</name>
+      <macros>
+        <PV>Cryo-CBox:LN2:LI3685-PercOut</PV>
+      </macros>
+      <file>Embedded/decimation.bob</file>
+      <y>30</y>
+      <width>340</width>
+      <height>40</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_9</name>
+      <macros>
+        <PV>CstatV-LHe:TT665M:sRdV</PV>
+      </macros>
+      <file>Embedded/decimation.bob</file>
+      <y>60</y>
+      <width>340</width>
+      <height>40</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_10</name>
+      <macros>
+        <PV>CstatV-LHe:TT663M:sRdV</PV>
+      </macros>
+      <file>Embedded/decimation.bob</file>
+      <y>90</y>
+      <width>340</width>
+      <height>40</height>
+    </widget>
   </widget>
 </display>
