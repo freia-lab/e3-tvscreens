@@ -1,10 +1,16 @@
 # This should be a test or example startup script
 
 require tvscreens
+require recsync
+require iocstats
 
-addScan 15
-addScan 30
-addScan 45
-addScan 60
+epicsEnvSet ("IOCNAME", "ioc21-tvscreens")
 
-dbLoadRecords "freia-tvscreens.db", "P=FREIA-Info:,R="
+# iocStats database
+
+#dbLoadRecords("$(iocstats_DB)/iocAdminSoft-ess.db","IOC=$(IOCNAME)")
+
+iocshLoad("$(tvscreens_DIR)tvscreens.iocsh",  "TOP=/opt/epics/autosave")
+
+#iocshLoad("$(recsync_DIR)/recsync.iocsh", "IOCNAME=$(IOCNAME)")
+

@@ -36,14 +36,19 @@ record (seq,"$(P)$(R)scrnCtrl") {
     field(LNKE, "$(P)$(R)scrnSelect PP")
     field(LNKF, "$(P)$(R)scrnSelect PP")
     field(SELL, "$(P)$(R)scrnMask")
+    field(PINI, "YES")
+    info (autosaveFields, "DLY1 DLY2 DLY3 DLY4 DLY5 DLY6 DLY7 DLY8 DLY9 DLYA  DLYB DLYC DLYD DLYE DLYF")
 }
 
 record (longout, "$(P)$(R)scrnSelect") {
     field(DESC, "Visible screen number")
+    field(PINI, "YES")
 }
 
 record (mbboDirect, "$(P)$(R)scrnMask") {
     field(DESC, "Visible screens mask")
+    field(PINI, "YES")
+    info (autosaveFields, "VAL")
 }
 
 record (calcout, "$(P)$(R)scrnSeqProc") {
@@ -59,6 +64,6 @@ record (calcout, "$(P)$(R)scrnSeqProc") {
 record (longout, "$(P)$(R)scrnUpdPeriod") {
     field(DESC, "Screen loop update period")
     field(EGU, "s")
-    field(VAL, "10")
     field(PINI, "YES")
+    info (autosaveFields, "VAL")
 }

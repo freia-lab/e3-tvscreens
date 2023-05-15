@@ -2,4 +2,6 @@ record (ai, "$(PV)-dec") {
     field(SCAN, "45 second")
     field(INP, "$(PV)")
     field(EGU, "$(EGU)")
+    field(PINI, "YES")
+    info (autosaveFields, "SCAN")
 }

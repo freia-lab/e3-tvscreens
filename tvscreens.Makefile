@@ -26,9 +26,8 @@ ARCH_FILTER += linux-x86_64
 #     REQUIRED += asyn
 
 REQUIRED += iocshutils
-ifneq ($(strip $(IOCSHUTILS_DEP_VERSION)),)
-  iocshutils_VERSION=$(IOCSHUTILS_DEP_VERSION)
-endif
+REQUIRED += autosave
+REQUIRED += afterinit
 
 # Since this file (tvscreens.Makefile) is copied into
 # the module directory at build-time, these paths have to be relative

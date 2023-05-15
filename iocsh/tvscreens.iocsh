@@ -1,0 +1,29 @@
+# This should be the included snippet to configure and run the deployed IOC. It should be loaded with
+#
+#   iocshLoad("$(tvscreens_DIR)miscfreia.iocsh", "TOP=/opt/epics/autosave")
+
+#- ###                tvscreens   iocsh             ###
+#- ####################################################
+#- >> Mandatory
+#- IOCNAME -	  - IOC name
+#- TOP	   	  - top directory for autosave
+#-
+#- >> Optional
+#- PREFIX	  - prefix for the PVs (default "FREIA-Info:")
+#- DEV		  - Device to be controlled (dafault "")
+#-
+
+epicsEnvSet("IOCDIR", "tvscreens")
+
+addScan 15
+addScan 30
+addScan 45
+addScan 60
+
+#################################################
+
+iocshLoad("$(autosave_DIR)autosave.iocsh", "AS_TOP=$(TOP),IOCNAME=$(IOCNAME)")
+
+#################################################
+
+dbLoadRecords "$(tvscreens_DB)freia-tvscreens.db", "P=$(PREFIX=FREIA-Info:),R=$(DEV='')"
